@@ -10803,6 +10803,9 @@ article.media .media-content .title {
   margin: 0;
   line-height: inherit;
 }
+article.article {
+  position: relative;
+}
 article.article .article-meta,
 article.article .article-tags {
   color: #7a7a7a;
@@ -10810,6 +10813,11 @@ article.article .article-tags {
 article.article .article-meta {
   overflow-x: auto;
   margin-bottom: 0.5rem;
+}
+article.article .article-more {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
 }
 article.article .content {
   word-wrap: break-word;
@@ -10869,6 +10877,10 @@ article.article .article-tags {
 .rtl .level.is-mobile .level-item:not(:last-child) {
   margin-left: 0.75rem;
   margin-right: 0;
+}
+.rtl article.article .article-more {
+  right: auto;
+  left: 0.75rem;
 }
 .table-overflow {
   overflow-x: auto;
